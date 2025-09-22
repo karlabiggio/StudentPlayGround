@@ -9,4 +9,7 @@ class StudentMemLocalDataSource {
     fun save(student: Student) {
         dataSource.put(student.exp, student)
     }
+    fun obtainStudents() : List<Student>{
+        return dataSource.values.toList()
+    }
 }
