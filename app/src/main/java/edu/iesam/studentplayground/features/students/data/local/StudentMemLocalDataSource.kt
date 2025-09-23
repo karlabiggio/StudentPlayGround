@@ -14,8 +14,8 @@ class StudentMemLocalDataSource {
         return dataSource.values.toList()
     }
 
-    fun delete(student: Student){
-        dataSource.remove(student.exp)
+    fun delete(exp: String){
+        dataSource.remove(exp)
     }
     
 }

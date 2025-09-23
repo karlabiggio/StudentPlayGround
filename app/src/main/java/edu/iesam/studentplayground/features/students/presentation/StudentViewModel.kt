@@ -16,8 +16,8 @@ class StudentViewModel(private val saveStudentUseCase: SaveStudentUseCase, priva
         return fetchStudentsUseCase.invoke()
     }
 
-    fun deleteStudent(student: Student) {
-        deleteStudentUseCase.invoke(student)
+    fun deleteStudent(exp: String) {
+        deleteStudentUseCase.invoke(exp)
     }
 
 }

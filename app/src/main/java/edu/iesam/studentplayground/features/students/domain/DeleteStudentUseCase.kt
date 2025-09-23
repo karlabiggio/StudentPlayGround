@@ -2,8 +2,8 @@ package edu.iesam.studentplayground.features.students.domain
 
 class DeleteStudentUseCase(val studentRepository: StudentRepository) {
 
-    operator fun invoke(student: Student){
-        studentRepository.delete(student)
+    operator fun invoke(exp: String){
+        studentRepository.delete(exp)
     }
 
 }

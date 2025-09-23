@@ -21,8 +21,8 @@ class StudentDataRepository(
     }
 
 
-    override fun delete(student: Student) {
-        memLocalDataSource.delete(student)
+    override fun delete(exp: String) {
+        memLocalDataSource.delete(exp)
     }
 
 }
