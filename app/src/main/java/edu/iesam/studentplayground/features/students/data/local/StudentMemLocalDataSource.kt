@@ -17,5 +17,13 @@ class StudentMemLocalDataSource {
     fun delete(exp: String){
         dataSource.remove(exp)
     }
+
+    fun update(exp: String, newName: String){
+        val student = dataSource[exp]
+        if(student != null) {
+            student.name = newName
+        }
+
+    }
     
 }
