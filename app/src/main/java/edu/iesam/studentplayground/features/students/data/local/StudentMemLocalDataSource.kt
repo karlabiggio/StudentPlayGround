@@ -11,7 +11,10 @@ class StudentMemLocalDataSource {
     }
 
     fun obtainStudents() : List<Student>{
-        return dataSource.values.toList()
+        //return dataSource.values.toList()
+        return dataSource.map { student ->
+            student.value
+        }
     }
 
     fun delete(exp: String){
